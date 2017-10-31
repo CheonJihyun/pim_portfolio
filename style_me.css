@@ -1,0 +1,126 @@
+@font-face {
+	font-family : Oregano-Regular;
+	src : url(Oregano-Regular.ttf);
+}
+
+@font-face {
+	font-family : larabiefont;
+	src : url(larabiefont.ttf);
+}
+
+body {
+	background-color : white;
+	font-family : larabiefont;
+	overflow : hidden;
+}
+
+.me-title p {
+	position : absolute;
+	text-align : center;
+	top : 15%;
+	right : 20%;
+	font-size : 1.2em;
+}
+
+/* me-content */
+.me-content img {
+	position : absolute;
+	width : 25%;
+	height : auto;
+	top : 29%;
+	right : 20%;
+}
+
+.me-text {
+	position : absolute;
+	top : 32%;
+	right : 50%;
+}
+
+.me-text p {
+	text-align : right;
+	font-size : 0.8em;
+}
+
+/* me 화면 위쪽 button */
+.up-button {
+	position : absolute;
+	top : 0;
+	left : 0;
+	height : 3em;
+	width : 100%;
+	background-color : DarkGray;
+	opacity : 0.0;
+}
+
+.up-button i {
+	position : absolute;
+	left : 13.5em;
+	top : -0.1em;
+	font-size : 3.2em;
+	color : white;
+}
+
+div.up-button:hover{
+	opacity : 0.3;
+}
+
+
+/* index 화면 아래쪽 button */
+.down-button {
+	position : absolute;
+	bottom : 0;
+	left : 0;
+	height : 3em;
+	width : 100%;
+	background-color : DarkGray;
+	opacity : 0.0;
+}
+
+.down-button i {
+	position : absolute;
+	left : 13.5em;
+	bottom : -0.1em;
+	font-size : 3.2em;
+	color : white;
+}
+
+div.down-button:hover{
+	opacity : 0.3;
+}
+
+
+/* me 화면 왼쪽 index */
+.index {
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 4em;
+	padding-top : 17%;
+}
+
+.index ul {
+	list-style-type : none;
+	line-height : 2.0;
+}
+
+.home-icon i {
+	font-size : 1.3em;
+	color : hsl(0, 0%, 80%);
+}
+
+.index-icon1 i {
+	font-size : 0.9em;
+	padding-left : 0.26em;
+	color : hsl(0, 0%, 66%);
+}
+
+.index-icon i {
+	font-size : 0.9em;
+	padding-left : 0.26em;
+	color : hsl(0, 0%, 80%);
+}
+
+.index i:hover {
+	color : hsl(0, 0%, 66%);
+}

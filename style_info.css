@@ -1,0 +1,251 @@
+@font-face {
+	font-family : Oregano-Regular;
+	src : url(Oregano-Regular.ttf);
+}
+
+@font-face {
+	font-family : larabiefont;
+	src : url(larabiefont.ttf);
+}
+
+body {
+	background-color : white;
+	font-family : Oregano-Regular;
+	overflow : hidden;
+}
+
+.info-content p {
+	text-align : center;
+}
+
+.info-content a {
+	font-size : 1.5em;
+	color : hsl(60, 56%, 65%);
+}
+
+.info-title pre{
+	position : absolute;
+	text-align : center;
+	top : 7.5em;
+	right : -1.5em;
+	font-family : larabiefont;
+	font-size : 1.2em;
+	transform : rotate(90deg);
+}
+
+/* info 화면 왼쪽 info1 */
+.info1 p {
+	position : absolute;
+	width : 40%;
+	left : 20em;
+	top : 68%;
+	transform : rotate(90deg);
+}
+
+.info1 a {
+	background-color : hsl(0, 0%, 41%)
+}
+
+.info1 img {
+	position : absolute;
+	height : 100%;
+	width : auto;
+	top : 0;
+	left : 15em;
+	transition : all 1.2s linear;
+	z-index : -1;
+}
+
+/* info1 hover하면 나타나는 info1-content */
+.info1-content {
+	position : relative;
+	height : 15em;
+	width : 21.3em;
+	top : 7em;
+	left : 14.5em;
+	padding : 1em;
+	background-color : beige;
+	opacity : 0;
+	transition : all 1.5s ease-in-out;
+}
+
+.info1-content h2 {
+	text-align : center;
+	position : relative;
+	font-size : 2.5em;
+	transform : translateY(-100px);
+	opacity : 0;
+	transition : all 1.2s ease-in-out;
+}
+
+.info1-content h3 {
+	font-size : 1em;
+	position : relative;
+	text-align : center;
+	transform : translateY(100px)
+	opacity : 0;
+	transition : all 1.2s linear;
+}
+
+.info1:hover .info1-content {
+	opacity : 1;
+}
+
+.info1:hover h2, .info1:hover h3 {
+	opacity : 1;
+	transform : translateY(0px);
+}
+
+.info1:hover h3 {
+	transition-delay : 0.2s;
+}
+
+/* info 화면 오른쪽 info2 */
+.info2 p {
+	position : absolute;
+	width : 40%;
+	right : 1.4em;
+	top : 68%;
+	transform : rotate(90deg);
+}
+
+.info2 a {
+	background-color : hsl(0, 0%, 41%)
+}
+
+.info2 img {
+	position : absolute;
+	height : 100%;
+	width : auto;
+	top : 0em;
+	right : 18em;
+	transition : all 1.2s linear;
+	z-index : -1;
+}
+
+/* info2 hover하면 나타나는 info2-content */
+.info2-content {
+	position : relative;
+	height : 15em;
+	width : 21.4em;
+	top : -9.9em;
+	right : -43.6em;
+	padding : 1em;
+	background-color : beige;
+	opacity : 0;
+	transition : all 1.5s ease-in-out;
+}
+
+.info2-content h2 {
+	text-align : center;
+	position : relative;
+	font-size : 2.5em;
+	transform : translateY(-100px);
+	opacity : 0;
+	transition : all 1.2s ease-in-out;
+}
+
+.info2-content h3 {
+	font-size : 1em;
+	position : relative;
+	text-align : center;
+	transform : translateY(100px)
+	opacity : 0;
+	transition : all 1.2s linear;
+}
+
+.info2:hover .info2-content {
+	opacity : 1;
+}
+
+.info2:hover h2, .info2:hover h3 {
+	opacity : 1;
+	transform : translateY(0px);
+}
+
+.info2:hover h3 {
+	transition-delay : 0.2s;
+}
+
+/* index 화면 위쪽 button */
+.up-button {
+	position : absolute;
+	top : 0;
+	left : 0;
+	height : 3em;
+	width : 100%;
+	background-color : DarkGray;
+	opacity : 0.0;
+}
+
+.up-button i {
+	position : absolute;
+	left : 13.5em;
+	top : -0.1em;
+	font-size : 3.2em;
+	color : white;
+}
+
+div.up-button:hover{
+	opacity : 0.3;
+}
+
+
+/* index 화면 아래쪽 button */
+.down-button {
+	position : absolute;
+	bottom : 0;
+	left : 0;
+	height : 3em;
+	width : 100%;
+	background-color : DarkGray;
+	opacity : 0.0;
+}
+
+.down-button i {
+	position : absolute;
+	left : 13.5em;
+	bottom : -0.1em;
+	font-size : 3.2em;
+	color : white;
+}
+
+div.down-button:hover{
+	opacity : 0.3;
+}
+
+
+/* info 화면 왼쪽 index */
+.index {
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 4em;
+	padding-top : 20%;
+}
+
+.index ul {
+	list-style-type : none;
+	line-height : 2.0;
+}
+
+.home-icon i {
+	font-size : 1.3em;
+	color : hsl(0, 0%, 80%);
+}
+
+.index-icon1 i {
+	font-size : 0.9em;
+	padding-left : 0.26em;
+	color : hsl(0, 0%, 66%);
+}
+
+.index-icon i {
+	font-size : 0.9em;
+	padding-left : 0.26em;
+	color : hsl(0, 0%, 80%);
+}
+
+.index i:hover {
+	color : hsl(0, 0%, 66%);
+}

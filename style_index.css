@@ -1,0 +1,94 @@
+@font-face {
+	font-family : larabiefont;
+	src : url(larabiefont.ttf);
+}
+
+body {
+	background-color : white;
+	overflow : hidden;
+}
+
+/* main 화면 중간의 title */
+.main-title {
+	margin-top : 32%;
+	margin-left : 78.5%;
+	width : 4em;
+}
+
+.main-title a {
+	font-size : 1.3em;
+	font-weight : 200;
+	font-family : larabiefont;
+	color : hsl(0, 0%, 80%);
+	letter-spacing : 0.5em;
+	text-decoration : none;
+	background-color : hsla(0, 100%, 25%, 0.9);
+}
+
+.main-title a:hover {
+	color : hsl(0, 0%, 60%);
+}
+/*DarkGray #a9a9a9 hsl(0, 0%, 66%) DimGray 696969 hsl(0, 0%, 41%)*/
+
+/* main 화면 중간의 image */
+.main-photo img {
+	width : 65em;
+	height : auto;
+	position : absolute;
+	top : 12%;
+	left : 12%;
+	opacity : 0.9;
+	z-index : -1;
+}
+
+/* main 화면 오른쪽의 button */
+.right-button {
+	position : absolute;
+	top : 0;
+	right : 0;
+	width : 3em;
+	height : 100%;
+	background-color : DarkGray;
+	opacity : 0.0;
+}
+
+.right-button i {
+	position : absolute;
+	right : 0.25em;
+	top : 49%;
+	font-size : 3.2em;
+	color : white;
+}
+
+div.right-button:hover{
+	opacity : 0.3;
+}
+
+/* main 화면 왼쪽 index */
+.index {
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 4em;
+	padding-top : 20%;
+}
+
+.index ul {
+	list-style-type : none;
+	line-height : 2.0;
+}
+
+.home-icon i {
+	font-size : 1.3em;
+	color : hsl(0, 0%, 66%);
+}
+
+.index-icon i {
+	font-size : 0.9em;
+	padding-left : 0.26em;
+	color : hsl(0, 0%, 80%);
+}
+
+.index i:hover {
+	color : hsl(0, 0%, 66%);
+}
